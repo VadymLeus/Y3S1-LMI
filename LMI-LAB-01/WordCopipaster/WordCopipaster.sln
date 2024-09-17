@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCopipaster", "WordCopipaster\WordCopipaster.csproj", "{386CE53D-C58E-477C-821F-166DB1B98301}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{386CE53D-C58E-477C-821F-166DB1B98301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386CE53D-C58E-477C-821F-166DB1B98301}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386CE53D-C58E-477C-821F-166DB1B98301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386CE53D-C58E-477C-821F-166DB1B98301}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C91DE19-12DA-4F9D-8382-B760FE17BD0C}
+	EndGlobalSection
+EndGlobal

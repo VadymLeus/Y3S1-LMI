@@ -1,0 +1,139 @@
+﻿<RibbonWindow x:Class="WordCopipaster.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="MainWindow" Height="600" Width="800">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!-- Стрічка інструментів -->
+        <Ribbon Grid.Row="0">
+            <Ribbon.QuickAccessToolBar>
+                <RibbonQuickAccessToolBar>
+                    <RibbonButton Label="Зберегти"
+                                  SmallImageSource="images/save.png"
+                                  Click="SaveFile_Click" />
+                    <RibbonButton Label="Зберегти як"
+                                  SmallImageSource="images/save_as.png"
+                                  Click="SaveAsFile_Click" />
+                    <RibbonButton Label="Відмінити"
+                                  SmallImageSource="images/undo.png"
+                                  Click="UndoText_Click" />
+                    <RibbonButton Label="Повторити"
+                                  SmallImageSource="images/redo.png"
+                                  Click="RedoText_Click" />
+                </RibbonQuickAccessToolBar>
+            </Ribbon.QuickAccessToolBar>
+
+            <!-- Меню програми -->
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu SmallImageSource="images/app_icon.png">
+                    <RibbonApplicationMenuItem Header="Відкрити"
+                                               ImageSource="images/open.png"
+                                               Click="OpenFile_Click" />
+                    <RibbonApplicationMenuItem Header="Зберегти"
+                                               ImageSource="images/save.png"
+                                               Click="SaveFile_Click" />
+                    <RibbonApplicationMenuItem Header="Зберегти як..."
+                                               ImageSource="images/save_as.png"
+                                               Click="SaveAsFile_Click" />
+                    <RibbonApplicationMenuItem Header="Закрити"
+                                               ImageSource="images/close.png"
+                                               Click="CloseFile_Click" />
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+
+            <!-- Вкладка "Редагування" -->
+            <RibbonTab Header="Редагування">
+                <RibbonGroup Header="Шрифт">
+                    <RibbonButton Label="Жирний"
+                                  LargeImageSource="images/bold.png"
+                                  Click="BoldText_Click" />
+                    <RibbonButton Label="Курсив"
+                                  LargeImageSource="images/italic.png"
+                                  Click="ItalicText_Click" />
+                    <RibbonButton Label="Підкреслений"
+                                  LargeImageSource="images/underline.png"
+                                  Click="UnderlineText_Click" />
+                </RibbonGroup>
+
+                <RibbonGroup Header="Буфер обміну">
+                    <RibbonButton Label="Копіювати"
+                                  LargeImageSource="images/copy.png"
+                                  Click="CopyText_Click" />
+                    <RibbonButton Label="Вставити"
+                                  LargeImageSource="images/paste.png"
+                                  Click="PasteText_Click" />
+                    <RibbonButton Label="Вирізати"
+                                  LargeImageSource="images/cut.png"
+                                  Click="CutText_Click" />
+                </RibbonGroup>
+
+                <RibbonGroup Header="Вирівнювання">
+                    <RibbonButton Label="По лівому краю"
+                  LargeImageSource="images/align_left.png"
+                  Click="AlignLeft_Click" />
+                    <RibbonButton Label="По центру"
+                  LargeImageSource="images/align_center.png"
+                  Click="AlignCenter_Click" />
+                    <RibbonButton Label="По правому краю"
+                  LargeImageSource="images/align_right.png" 
+                  Click="AlignRight_Click" />
+                    
+                </RibbonGroup>
+
+                <RibbonGroup Header="Список">
+                    <RibbonButton Label="Список нумерації"
+                  LargeImageSource="images/numeration_list.png"
+                  Click="Numeration_List_Click" />
+
+                    <RibbonButton Label="Багаторівневий список"
+                  LargeImageSource="images/bullet_list.png"
+                  Click="Bullet_List_Click" />
+                </RibbonGroup>
+            </RibbonTab>
+
+            <!-- Вкладка "Різне" -->
+            <RibbonTab Header="Різне">
+                <RibbonGroup Header="Допомога">
+                    <RibbonButton Label="Документація"
+                      LargeImageSource="images/help.png"
+                      Click="Help_Click" />
+                    <RibbonButton Label="Про комп'ютер користувача"
+                      LargeImageSource="images/documentation.png"
+                      Click="Documentation_Click" />
+                </RibbonGroup>
+
+               
+            </RibbonTab>
+        </Ribbon>
+
+        <!-- Текстовий редактор -->
+        <RichTextBox Name="richTextBox" Grid.Row="1" Margin="10" VerticalScrollBarVisibility="Auto">
+            <RichTextBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Копіювати" Click="CopyText_Click" />
+                    <MenuItem Header="Вставити" Click="PasteText_Click" />
+                    <MenuItem Header="Вирізати" Click="CutText_Click" />
+                    <Separator />
+                    <MenuItem Header="Відмінити" Click="UndoText_Click" />
+                    <MenuItem Header="Повторити" Click="RedoText_Click" />
+                    <Separator />
+                    <MenuItem Header="Вирівняти по лівому краю" Click="AlignLeft_Click" />
+                    <MenuItem Header="Вирівняти по центру" Click="AlignCenter_Click" />
+                    <MenuItem Header="Вирівняти по правому краю" Click="AlignRight_Click" />
+                </ContextMenu>
+            </RichTextBox.ContextMenu>
+        </RichTextBox>
+
+        <!-- Панель вкладок для відкритих файлів -->
+        <TabControl Name="TabControlFiles" Grid.Row="2" Height="30" SelectionChanged="TabControlFiles_SelectionChanged"/>
+    </Grid>
+</RibbonWindow>

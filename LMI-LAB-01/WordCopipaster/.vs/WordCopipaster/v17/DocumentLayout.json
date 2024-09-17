@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\vadym\\Desktop\\LMI-LAB-01\\WordCopipaster\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{386CE53D-C58E-477C-821F-166DB1B98301}|WordCopipaster\\WordCopipaster.csproj|C:\\Users\\vadym\\Desktop\\LMI-LAB-01\\WordCopipaster\\wordcopipaster\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{386CE53D-C58E-477C-821F-166DB1B98301}|WordCopipaster\\WordCopipaster.csproj|solutionrelative:wordcopipaster\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": []
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "e153bdba-091f-4f59-a306-cb1a891af9a9",
+        "Display": 0,
+        "X": 32,
+        "Y": 71,
+        "Width": 1680,
+        "Height": 789,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\vadym\\Desktop\\LMI-LAB-01\\WordCopipaster\\WordCopipaster\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "WordCopipaster\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\vadym\\Desktop\\LMI-LAB-01\\WordCopipaster\\WordCopipaster\\MainWindow.xaml",
+              "RelativeToolTip": "WordCopipaster\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-03T12:40:34.95Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
